@@ -1,0 +1,37 @@
+<assembly>
+	<id>release</id>
+	<formats>
+		<format>tar.gz</format>
+		<format>dir</format>
+	</formats>
+	<dependencySets>
+		<!-- refer to http://maven.apache.org/plugins/maven-assembly-plugin/assembly.html#class_dependencySet -->
+		<dependencySet>
+			<useProjectArtifact>true</useProjectArtifact>
+			<outputDirectory>lib</outputDirectory>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<!--<fileSet>-->
+			<!--<directory>src/main/resources/logs</directory>-->
+			<!--<outputDirectory>logs</outputDirectory>-->
+		<!--</fileSet>-->
+		<fileSet>
+			<directory>src/main/resources</directory>
+			<outputDirectory>conf</outputDirectory>
+			<includes>
+				<include>log4j.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>src/scripts</directory>
+			<outputDirectory>bin</outputDirectory>
+			<fileMode>0733</fileMode>
+			<includes>
+				<include>*.sh</include>
+				<include>*.cmd</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+
+</assembly>
