@@ -416,8 +416,8 @@ public class HttpClientUtils {
     public static void main(String[] args){
         String url = "http://localhost:8080";
 //        String url = "http://localhost:8844";
-        HttpClientUtils.active();
-//        HttpClientUtils.cloudScan();
+//        HttpClientUtils.active();
+        HttpClientUtils.cloudScan();
 //        HttpClientUtils.register();
 //        HttpClientUtils.demo();
 //        try {

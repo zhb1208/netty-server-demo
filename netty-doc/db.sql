@@ -21,4 +21,4 @@ CREATE TABLE `sys_users` (
   `modified_by` varchar(45) DEFAULT NULL COMMENT '修改人',
   `status` int(11) NOT NULL DEFAULT '1' COMMENT '删除状态：0 删除 1 未删除',
   PRIMARY KEY (`id`) COMMENT '用户表'
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

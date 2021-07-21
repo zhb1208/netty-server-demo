@@ -16,7 +16,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>true</skipTests>
         <netty.version>4.1.11.Final</netty.version>
-        <sdk.version>1.7</sdk.version>
+        <sdk.version>1.8</sdk.version>
+        <spring.version>5.2.16.RELEASE</spring.version>
     </properties>
 
     <dependencies>
@@ -111,42 +112,42 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <!-- mysql -->
         <dependency>
@@ -367,21 +368,21 @@
             <id>dev</id>
             <properties>
                 <netty.log.level>INFO</netty.log.level>
-                <netty.log.path>/Users/zhanghongbing/Workspaces/Projects/nq/netty-server-fromework-demo/netty-server-demo</netty.log.path>
+                <netty.log.path>/data/logs/netty-server-demo</netty.log.path>
             </properties>
         </profile>
         <profile>
             <id>verify</id>
             <properties>
                 <netty.log.level>INFO</netty.log.level>
-                <netty.log.path>/Users/zhanghongbing/Workspaces/Projects/nq/netty-server-fromework-demo/netty-server-demo</netty.log.path>
+                <netty.log.path>/data/logs/netty-server-demo</netty.log.path>
             </properties>
         </profile>
         <profile>
             <id>product</id>
             <properties>
                 <netty.log.level>INFO</netty.log.level>
-                <netty.log.path>/Users/zhanghongbing/Workspaces/Projects/nq/netty-server-fromework-demo/netty-server-demo</netty.log.path>
+                <netty.log.path>/data/logs/netty-server-demo</netty.log.path>
             </properties>
         </profile>
 
