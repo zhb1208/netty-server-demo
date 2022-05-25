@@ -17,7 +17,7 @@
         <skipTests>true</skipTests>
         <netty.version>4.1.11.Final</netty.version>
         <sdk.version>1.8</sdk.version>
-        <spring.version>5.2.16.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
     </properties>
 
     <dependencies>
